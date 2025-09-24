@@ -6,13 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CEE6E7FB2E84211300DEB17D /* RealTimeOddsPackage in Frameworks */ = {isa = PBXBuildFile; productRef = CEE6E7FA2E84211300DEB17D /* RealTimeOddsPackage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		CEE6E7E92E841ED700DEB17D /* RealTimeOdds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealTimeOdds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CEE6E7F82E841FA000DEB17D /* Exceptions for "RealTimeOdds" folder in "RealTimeOdds" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				RealTimeOddsPackage,
+			);
+			target = CEE6E7E82E841ED700DEB17D /* RealTimeOdds */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		CEE6E7EB2E841ED700DEB17D /* RealTimeOdds */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CEE6E7F82E841FA000DEB17D /* Exceptions for "RealTimeOdds" folder in "RealTimeOdds" target */,
+			);
 			path = RealTimeOdds;
 			sourceTree = "<group>";
 		};
@@ -23,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE6E7FB2E84211300DEB17D /* RealTimeOddsPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				CEE6E7EB2E841ED700DEB17D /* RealTimeOdds */,
+				CEE6E7F92E84211300DEB17D /* Frameworks */,
 				CEE6E7EA2E841ED700DEB17D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +62,13 @@
 				CEE6E7E92E841ED700DEB17D /* RealTimeOdds.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CEE6E7F92E84211300DEB17D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +91,7 @@
 			);
 			name = RealTimeOdds;
 			packageProductDependencies = (
+				CEE6E7FA2E84211300DEB17D /* RealTimeOddsPackage */,
 			);
 			productName = RealTimeOdds;
 			productReference = CEE6E7E92E841ED700DEB17D /* RealTimeOdds.app */;
@@ -253,6 +280,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = L7KMWT635B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -285,6 +313,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = L7KMWT635B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -332,6 +361,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEE6E7FA2E84211300DEB17D /* RealTimeOddsPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealTimeOddsPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEE6E7E12E841ED700DEB17D /* Project object */;
 }
