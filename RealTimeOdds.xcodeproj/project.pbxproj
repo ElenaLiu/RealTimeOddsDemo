@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE6CA3142E8960C3005C4FEE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CE6CA3132E8960C3005C4FEE /* README.md */; };
 		CE84F3272E8645A2004EA241 /* RealTimeOddsPackage in Frameworks */ = {isa = PBXBuildFile; productRef = CE84F3262E8645A2004EA241 /* RealTimeOddsPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE6CA3132E8960C3005C4FEE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CEE6E7E92E841ED700DEB17D /* RealTimeOdds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealTimeOdds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -51,6 +53,7 @@
 		CEE6E7E02E841ED700DEB17D = {
 			isa = PBXGroup;
 			children = (
+				CE6CA3132E8960C3005C4FEE /* README.md */,
 				CEE6E7EB2E841ED700DEB17D /* RealTimeOdds */,
 				CEE6E7F92E84211300DEB17D /* Frameworks */,
 				CEE6E7EA2E841ED700DEB17D /* Products */,
@@ -140,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE6CA3142E8960C3005C4FEE /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
