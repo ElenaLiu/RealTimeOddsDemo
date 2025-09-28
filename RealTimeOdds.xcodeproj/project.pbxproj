@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CEE6E7FB2E84211300DEB17D /* RealTimeOddsPackage in Frameworks */ = {isa = PBXBuildFile; productRef = CEE6E7FA2E84211300DEB17D /* RealTimeOddsPackage */; };
+		CE84F3272E8645A2004EA241 /* RealTimeOddsPackage in Frameworks */ = {isa = PBXBuildFile; productRef = CE84F3262E8645A2004EA241 /* RealTimeOddsPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +18,7 @@
 		CEE6E7F82E841FA000DEB17D /* Exceptions for "RealTimeOdds" folder in "RealTimeOdds" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Info.plist,
 				RealTimeOddsPackage,
 			);
 			target = CEE6E7E82E841ED700DEB17D /* RealTimeOdds */;
@@ -40,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEE6E7FB2E84211300DEB17D /* RealTimeOddsPackage in Frameworks */,
+				CE84F3272E8645A2004EA241 /* RealTimeOddsPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +92,7 @@
 			);
 			name = RealTimeOdds;
 			packageProductDependencies = (
-				CEE6E7FA2E84211300DEB17D /* RealTimeOddsPackage */,
+				CE84F3262E8645A2004EA241 /* RealTimeOddsPackage */,
 			);
 			productName = RealTimeOdds;
 			productReference = CEE6E7E92E841ED700DEB17D /* RealTimeOdds.app */;
@@ -121,6 +122,9 @@
 			);
 			mainGroup = CEE6E7E02E841ED700DEB17D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CE84F3252E8645A2004EA241 /* XCLocalSwiftPackageReference "RealTimeOdds/RealTimeOddsPackage" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CEE6E7EA2E841ED700DEB17D /* Products */;
 			projectDirPath = "";
@@ -284,17 +288,17 @@
 				DEVELOPMENT_TEAM = L7KMWT635B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = RealTimeOdds/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = d.RealTimeOdds;
+				PRODUCT_BUNDLE_IDENTIFIER = com.realtimeodds.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -317,17 +321,17 @@
 				DEVELOPMENT_TEAM = L7KMWT635B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = RealTimeOdds/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = d.RealTimeOdds;
+				PRODUCT_BUNDLE_IDENTIFIER = com.realtimeodds.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -362,8 +366,15 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		CE84F3252E8645A2004EA241 /* XCLocalSwiftPackageReference "RealTimeOdds/RealTimeOddsPackage" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = RealTimeOdds/RealTimeOddsPackage;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		CEE6E7FA2E84211300DEB17D /* RealTimeOddsPackage */ = {
+		CE84F3262E8645A2004EA241 /* RealTimeOddsPackage */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RealTimeOddsPackage;
 		};
