@@ -1,10 +1,6 @@
 import Foundation
 
-public protocol MatchesProviding {
-    func fetchMatches() async throws -> [Match]
-}
-
-public struct MatchesMockAPI: MatchesProviding {
+public struct MatchesMockAPI {
     public enum Error: Swift.Error {
         case missingResource
         case decodingFailed(Swift.Error)
@@ -23,7 +19,7 @@ public struct MatchesMockAPI: MatchesProviding {
 
     public func fetchMatches() async throws -> [Match] {
         try await Task.sleep(nanoseconds: 120_000_000)
-        return try await Task.detached(priority: .userInitiated) {
+        return try await Task.detached(priority: .high) {
             try Self.loadMatches()
         }.value
     }

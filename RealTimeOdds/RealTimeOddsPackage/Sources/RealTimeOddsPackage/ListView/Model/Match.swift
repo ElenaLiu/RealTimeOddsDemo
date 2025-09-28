@@ -27,12 +27,9 @@ public struct MatchOddsItem: Identifiable, Hashable, Sendable {
 
     public func hash(into hasher: inout Hasher) {
         hasher.combine(match.id)
-        hasher.combine(odds?.teamAOdds)
-        hasher.combine(odds?.teamBOdds)
-        hasher.combine(odds?.updatedAt)
     }
 
     public static func == (lhs: MatchOddsItem, rhs: MatchOddsItem) -> Bool {
-        lhs.match == rhs.match && lhs.odds == rhs.odds
+        lhs.match.id == rhs.match.id
     }
 }

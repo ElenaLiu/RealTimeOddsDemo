@@ -1,10 +1,6 @@
 import Foundation
 
-public protocol OddsProviding {
-    func fetchInitialOdds() async throws -> [OddsSnapshot]
-}
-
-public struct OddsMockAPI: OddsProviding {
+public struct OddsMockAPI {
     public enum Error: Swift.Error {
         case missingResource
         case decodingFailed(Swift.Error)
@@ -23,7 +19,7 @@ public struct OddsMockAPI: OddsProviding {
 
     public func fetchInitialOdds() async throws -> [OddsSnapshot] {
         try await Task.sleep(nanoseconds: 90_000_000)
-        return try await Task.detached(priority: .userInitiated) {
+        return try await Task.detached(priority: .high) {
             try Self.loadOdds()
         }.value
     }
